@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="rootAP" prefHeight="114.0" prefWidth="842.0" style="-fx-background-color: #ececec;"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.kiril.delete.controller.ControllerMain">
+    <children>
+        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <children>
+                <HBox spacing="10.0">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                    <children>
+                        <TextField fx:id="ip" promptText="пкреоечислить IP через запятую" HBox.hgrow="ALWAYS"/>
+                    </children>
+                </HBox>
+                <HBox maxWidth="1.7976931348623157E308" spacing="10.0">
+                    <children>
+                        <ComboBox fx:id="discList" prefHeight="25.0" prefWidth="79.0" promptText="С"/>
+                        <TextField fx:id="fileOUT" promptText="куда" HBox.hgrow="ALWAYS"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </HBox>
+                <HBox fx:id="panelHboxTool" maxWidth="1.7976931348623157E308" spacing="10.0">
+                    <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#delete"
+                                text="удалить" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
